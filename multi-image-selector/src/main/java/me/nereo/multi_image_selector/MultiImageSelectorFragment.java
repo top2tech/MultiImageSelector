@@ -346,7 +346,7 @@ public class MultiImageSelectorFragment extends Fragment {
                 cameraIntent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(mTmpFile));
                 startActivityForResult(cameraIntent, REQUEST_CAMERA);
             }else{
-                Toast.makeText(getActivity(), "图片错误", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), "Incorrect picture", Toast.LENGTH_SHORT).show();
             }
         }else{
             Toast.makeText(getActivity(), R.string.msg_no_camera, Toast.LENGTH_SHORT).show();
